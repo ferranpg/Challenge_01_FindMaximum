@@ -12,10 +12,14 @@ class Main {
 
         out.println("\r\nMaximum: " +  inList.maximum());
 
-        number = 6;
+        number = 7;
         out.println(numW.printNumberInWord(number));
-        number = 9;
+        number = 0;
         out.println(numW.printNumberInWordCase(number));
+
+        OddEven.checkOddEven(number);
+
+        out.println("\r\n " + Media.average(listaInts));
     }
 }
 /*-----------------------------------------------------------
@@ -99,5 +103,38 @@ class NumWord{
             default:
                 return "\r\n OTRO";
         }
+    }
+}
+
+/*-----------------------------------------------------------
+Challenge 3: Check Odd/Even
+Write a method called checkOddEven which prints "Odd Number"
+if the int variable “number” is odd, or “Even Number” otherwise.
+
+Hint n is an even number if (n % 2) is 0; otherwise, it is an odd number.
+Use == for comparison, e.g., (n % 2) == 0.
+-----------------------------------------------------------*/
+class OddEven{
+    public static void checkOddEven(int num) {
+        if (0 != (num % 2)){
+            out.println("\r\n Odd Number");
+        }else {
+            out.println("\r\n Even Number");
+        }
+    }
+}
+
+/*-----------------------------------------------------------
+Challenge 4: Calculate the average
+Write a method average that returns the average of the integer in the list.
+You can assume that the list has at least one element.
+-----------------------------------------------------------*/
+class Media{
+    public static double average(Integer[] numList) {
+        double suma = 0;
+        for (Integer integer : numList) {
+            suma = suma + integer;
+        }
+        return suma / numList.length;
     }
 }
