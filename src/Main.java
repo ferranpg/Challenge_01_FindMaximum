@@ -1,21 +1,12 @@
-
-import java.util.Arrays;
-import static java.lang.System.*;
+import static java.lang.System.out;
 
 class Main {
     public static void main(String[] args) {
-        int[] intMax = {2,4,7,0,34};
+        Integer[] listaInts = {34,0,0};
+        IntMax inList;
+        inList = new IntMax(listaInts);
 
-
-        if (intMax.length > 1){
-            Arrays.sort(intMax);
-            out.println("\r\nMaximum: " + intMax[intMax.length-1]);
-        } else {
-            out.println("\r\nMaximum: " + intMax[0]);
-        }
-
-
-
+        out.println("\r\nMaximum: " +  inList.maximum());
     }
 }
 
