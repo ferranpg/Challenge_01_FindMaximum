@@ -21,3 +21,8 @@
 
   - DELETE FROM rating WHERE id=281656475;
 
+### Querying Data
+
+**SELECT**: Allows you to query data from a table
+
+  - SELECT * FROM rating; //we want all of the data in our table
