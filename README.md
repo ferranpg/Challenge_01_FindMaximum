@@ -1,6 +1,9 @@
 # JAVA-Challenges
 
 # SQL
+
+![image](https://user-images.githubusercontent.com/3032309/172044354-2c032215-e781-43f3-b11a-79979d1b7417.png)
+
 ## Queries
 
 **SHOW TABLES** : Para mostrar las tablas de la RDBMS
