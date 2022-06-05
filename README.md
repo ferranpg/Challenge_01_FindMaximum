@@ -26,3 +26,7 @@
 **SELECT**: Allows you to query data from a table
 
   - SELECT * FROM rating; //we want all of the data in our table
+  - SELECT app_name, total_ratings, genre FROM rating;
+  - SELECT app_name, total_ratings, genre FROM rating WHERE genre = "Games";
+  - SELECT app_name, total_ratings, genre FROM rating WHERE genre = "Games" AND total_ratings > 4;
+
