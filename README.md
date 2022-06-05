@@ -12,9 +12,7 @@
 
 **INSERT**: Allows you to create new data rows.
 
-  - INSERT INTO tabla_name (id, app_name, app_size, price, total_ratings, genre) : Inserta campo en la tabla
-
-  - VALUES (281656475, "PAC-MAN Premium", 100788224, 3.99, 4.5, "Games");
+  - INSERT INTO tabla_name (id, app_name, app_size, price, total_ratings, genre) VALUES (281656475, "PAC-MAN Premium", 100788224, 3.99, 4.5, "Games");
 
 **UPDATE**: Allows you to update an existing data row.
 
@@ -32,4 +30,17 @@
   - SELECT app_name, total_ratings, genre FROM rating;
   - SELECT app_name, total_ratings, genre FROM rating WHERE genre = "Games";
   - SELECT app_name, total_ratings, genre FROM rating WHERE genre = "Games" AND total_ratings > 4;
+
+### Aggregation Functions
+Aggregate functions allow you to turn multiple rows into a single value using some sort of calculation.
+
+**COUNT**: counts rows in a specified table or view.
+
+  - SELECT genre, COUNT(*) FROM rating;
+
+**AVERAGE**: calculates the average of a set of values.
+
+  - SELECT genre, AVG(price), AVG(total_ratings) FROM rating;
+
+[SQL Aggregate Functions](https://www.zentut.com/sql-tutorial/sql-aggregate-functions/)
 
