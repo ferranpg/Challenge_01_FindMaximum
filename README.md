@@ -22,6 +22,7 @@
 
   - DELETE FROM rating WHERE id=281656475;
 
+
 ### Querying Data
 
 **SELECT**: Allows you to query data from a table
@@ -30,6 +31,7 @@
   - SELECT app_name, total_ratings, genre FROM rating;
   - SELECT app_name, total_ratings, genre FROM rating WHERE genre = "Games";
   - SELECT app_name, total_ratings, genre FROM rating WHERE genre = "Games" AND total_ratings > 4;
+
 
 ### Aggregation Functions
 Aggregate functions allow you to turn multiple rows into a single value using some sort of calculation.
@@ -44,3 +46,12 @@ Aggregate functions allow you to turn multiple rows into a single value using so
 
 [SQL Aggregate Functions](https://www.zentut.com/sql-tutorial/sql-aggregate-functions/)
 
+
+### Grouping
+
+**GROUP BY**: Allows you to group rows where values of a column are the same.
+
+  - SELECT genre, COUNT(*) FROM rating GROUP BY genre;
+  - SELECT genre, AVG(price), AVG(total_ratings) FROM rating GROUP BY genre;
+
+[SQL GROUP BY](https://mode.com/sql-tutorial/sql-group-by/)
